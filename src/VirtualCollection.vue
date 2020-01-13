@@ -134,6 +134,9 @@ export default {
             }
         },
         onScroll(e) {
+            if (e.target.scrollTop <= 0 || e.target.scrollTop + e.target.clientHeight >= e.target.scrollHeight) {
+                return
+            }
             this.flushDisplayItems()
         },
         flushDisplayItems() {

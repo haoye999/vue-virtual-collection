@@ -1,5 +1,5 @@
 {
-  "name": "vue-virtual-collection",
+  "name": "@byted/vue-virtual-collection",
   "version": "1.3.0",
   "description": "Vue component for efficiently rendering large collection data",
   "keywords": [
@@ -25,15 +25,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/starkwang/vue-virtual-collection.git"
+    "url": ""
   },
-  "author": "starkwang",
+  "author": "hanlianhao",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/starkwang/vue-virtual-collection/issues"
-  },
-  "sideEffects": false,
-  "homepage": "https://github.com/starkwang/vue-virtual-collection#readme",
   "devDependencies": {
     "@vue/test-utils": "^1.0.0-beta.16",
     "babel-core": "^6.0.0",

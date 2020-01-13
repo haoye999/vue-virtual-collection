@@ -266,6 +266,9 @@ exports.default = {
             };
         },
         onScroll: function onScroll(e) {
+            if (e.target.scrollTop <= 0 || e.target.scrollTop + e.target.clientHeight >= e.target.scrollHeight) {
+                return;
+            }
             this.flushDisplayItems();
         },
         flushDisplayItems: function flushDisplayItems() {
@@ -815,9 +818,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       staticClass: "cell-container",
       style: (_vm.getComputedStyle(item))
     }, [_vm._t("cell", null, {
-      data: item.data
+      "data": item.data
     })], 2)
-  }))])
+  }), 0)])
 },staticRenderFns: []}
 
 /***/ }),
